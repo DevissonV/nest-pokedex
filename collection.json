@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"no\": 7,\r\n    \"name\" : \"goku\"\r\n}",
+					"raw": "{\r\n    \"no\": 17,\r\n    \"name\" : \"Homero\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,7 +40,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/api/v2/pokemon/devisson",
+					"raw": "{{base_url}}/api/v2/pokemon/picachu",
 					"host": [
 						"{{base_url}}"
 					],
@@ -48,7 +48,7 @@
 						"api",
 						"v2",
 						"pokemon",
-						"devisson"
+						"picachu"
 					]
 				}
 			},
@@ -89,7 +89,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/api/v2/pokemon/660dadf6cd3bca5a69128834",
+					"raw": "{{base_url}}/api/v2/pokemon/6613fbcdc708609e3a82e4d6",
 					"host": [
 						"{{base_url}}"
 					],
@@ -97,7 +97,55 @@
 						"api",
 						"v2",
 						"pokemon",
-						"660dadf6cd3bca5a69128834"
+						"6613fbcdc708609e3a82e4d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateSeed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v2/seed",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"seed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v2/pokemon?limit=3&offset=5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						},
+						{
+							"key": "offset",
+							"value": "5"
+						}
 					]
 				}
 			},
