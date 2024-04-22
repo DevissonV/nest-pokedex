@@ -34,6 +34,9 @@ npm run start:dev
 ```
 {{base_url}}/api/v2/seed
 ```
+
+9. En la carpeta raiz de este proyecto existe un archivo llamado `collection.json`, este archivo se puede importar en el postman para tener un ejemplo de transaccion de cada una de las api creadas
+
 ## Stack usado
 * Mongo DB
 * Nest
