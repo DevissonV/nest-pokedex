@@ -51,7 +51,6 @@ export class PokemonService {
 
     // name
     if (!pokemon) {
-      console.log("lega");
       pokemon = await this.pokemonDao.findOneByName(term);
     }
 
